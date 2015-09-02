@@ -57,13 +57,13 @@ abstract class Group {
 	/**
 	 * Group registration wrapper.
 	 *
-	 * Checks that `register_field_group()` exists prior to invoking the
+	 * Checks that `acf_add_local_field_group()` exists prior to invoking the
 	 * protected subclass `_register()` method.
 	 *
 	 * @since   0.1.0
 	 */
 	final public function register() {
-		if ( function_exists( '\register_field_group' ) ) {
+		if ( function_exists( '\acf_add_local_field_group' ) ) {
 			$this->_register();
 		}
 	}
