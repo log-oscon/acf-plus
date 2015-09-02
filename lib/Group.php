@@ -21,12 +21,6 @@ abstract class Group {
 	protected $key = '';
 
 	/**
-	 * ACF field references.
-	 * @var array
-	 */
-	protected $references = array();
-
-	/**
 	 * Post types associated with the group.
 	 *
 	 * @since   0.1.0
