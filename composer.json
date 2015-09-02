@@ -1,7 +1,6 @@
 {
     "name": "logoscon/acf-plus",
     "description": "Common utility classes for the Advanced Custom Fields (Pro) plugin on WordPress.",
-    "type": "wordpress-plugin",
     "keywords": ["wordpress", "advanced custom fields", "library", "toolkit"],
     "homepage": "https://github.com/log-oscon/acf-plus",
     "license": "GPL-2.0+",
