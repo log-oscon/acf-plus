@@ -65,7 +65,7 @@ class In {
 		$post_type = $options['post_type'];
 		$post_id   = $options['post_id'];
 
-		if ( ! $post_id ) {
+		if ( ! $post_type && ! $post_id ) {
 			return false;
 		}
 
