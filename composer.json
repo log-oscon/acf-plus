@@ -1,39 +1,44 @@
 {
-    "name": "logoscon/acf-plus",
-    "description": "Common utility classes for the Advanced Custom Fields (Pro) plugin on WordPress.",
-    "keywords": ["wordpress", "advanced custom fields", "library", "toolkit"],
-    "homepage": "https://github.com/log-oscon/acf-plus",
-    "license": "GPL-2.0+",
-    "authors": [
-      {
-          "name": "Luís Rodrigues",
-          "email": "hello@goblindegook.com",
-          "homepage": "http://goblindegook.com"
-      }
-    ],
-    "support": {
-        "issues": "https://github.com/log-oscon/acf-plus/issues",
-        "source": "https://github.com/log-oscon/acf-plus"
+  "name": "logoscon/acf-plus",
+  "description": "Common utility classes for the Advanced Custom Fields (Pro) plugin on WordPress.",
+  "keywords": ["wordpress", "advanced custom fields", "library", "toolkit"],
+  "homepage": "https://github.com/log-oscon/acf-plus",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Luís Rodrigues",
+      "email": "hello@goblindegook.com",
+      "homepage": "http://goblindegook.com"
     },
-    "autoload": {
-        "psr-4": {
-            "logoscon\\ACF\\": "lib/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "logoscon\\ACF\\Tests\\": "test/"
-        }
-    },
-    "require": {
-        "php": ">=5.3.0"
-    },
-    "suggest": {
-    },
-    "require-dev": {
-        "phpunit/phpunit": "*@stable",
-        "apigen/apigen": "4.0.0-RC4",
-        "10up/wp_mock": "dev-master"
-    },
-    "suggest": {}
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://github.com/s3rgiosan"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/log-oscon/acf-plus/issues",
+    "source": "https://github.com/log-oscon/acf-plus"
+  },
+  "autoload": {
+    "psr-4": {
+      "logoscon\\ACF\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "logoscon\\ACF\\Tests\\": "test/"
+    }
+  },
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "suggest": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*@stable",
+    "apigen/apigen": "4.0.0-RC4",
+    "10up/wp_mock": "dev-master"
+  },
+  "suggest": {}
 }

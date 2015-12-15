@@ -217,4 +217,46 @@ abstract class Group {
 		);
 	}
 
+
+	/**
+	 * Taxonomy term for a specific language.
+	 *
+	 * @param  string $default Default taxonomy term.
+	 *
+	 * @return string          Default or translated taxonomy term.
+	 *
+	 * @since   0.2.0
+	 */
+	protected function _get_taxonomy( $default ) {
+
+		if ( ! function_exists( 'icl_object_id' ) ) {
+			return $default;
+		}
+
+		$data     = explode( ':', $default );
+		$taxonomy = 'category';
+		$term     = '';
+
+		// Check data
+		if ( isset( $data[1] ) ) {
+			$taxonomy = $data[0];
+			$term     = $data[1];
+		}
+
+		// Get registered taxonomy term data
+		$term = \get_term_by( 'slug', $term, $taxonomy );
+
+		// Checks if term has translation for the current language
+		if ( $term && $term_id = \icl_object_id( $term->term_id, $taxonomy, false, ICL_LANGUAGE_CODE ) ) {
+
+			$icl_term = \get_term_by( 'id', $term_id, $taxonomy );
+
+			if ( $icl_term ) {
+				return "{$taxonomy}:{$icl_term->slug}";
+			}
+		}
+
+		return $default;
+	}
+
 }
