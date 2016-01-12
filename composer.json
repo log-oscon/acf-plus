@@ -33,8 +33,6 @@
   "require": {
     "php": ">=5.3.0"
   },
-  "suggest": {
-  },
   "require-dev": {
     "phpunit/phpunit": "*@stable",
     "apigen/apigen": "4.0.0-RC4",
