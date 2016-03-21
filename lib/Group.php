@@ -6,7 +6,7 @@ namespace logoscon\ACF;
 * Abstract class that defines common Advanced Custom Fields
 * registration functionality.
 *
-* @since  0.1.0
+* @since  1.0.0
 * @author log.OSCON, Lda. <engenharia@log.pt>
 */
 abstract class Group {
@@ -14,7 +14,7 @@ abstract class Group {
 	/**
 	 * Group key.
 	 *
-	 * @since 	0.1.0
+	 * @since 	1.0.0
 	 * @access  protected
 	 * @var     string
 	 */
@@ -23,7 +23,7 @@ abstract class Group {
 	/**
 	 * Post types associated with the group.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 * @access  protected
 	 * @var 	array
 	 */
@@ -32,7 +32,7 @@ abstract class Group {
 	/**
 	 * User roles allowed to interact with the group.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 * @access  protected
 	 * @var 	array
 	 */
@@ -41,7 +41,7 @@ abstract class Group {
 	/**
 	 * Options page associated with the group.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 * @access protected
 	 * @var    string
 	 */
@@ -60,7 +60,7 @@ abstract class Group {
 	 * Checks that `acf_add_local_field_group()` exists prior to invoking the
 	 * protected subclass `_register()` method.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	final public function register() {
 		if ( function_exists( '\acf_add_local_field_group' ) ) {
@@ -71,7 +71,7 @@ abstract class Group {
 	/**
 	 * Register the ACF group.
 	 *
-	 * @since    0.1.0
+	 * @since    1.0.0
 	 */
 	abstract protected function _register();
 
@@ -80,7 +80,7 @@ abstract class Group {
 	 *
 	 * @return  string The ACF group key.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	public function get_key() {
 		return $this->key;
@@ -91,7 +91,7 @@ abstract class Group {
 	 *
 	 * @return  array The post types associated with this field group.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	public function get_post_types() {
 		return $this->post_types;
@@ -102,7 +102,7 @@ abstract class Group {
 	 *
 	 * @param  string The post types associated with this field group.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 */
 	public function set_post_types( $post_types ) {
 		$this->post_types = $post_types;
@@ -113,7 +113,7 @@ abstract class Group {
 	 *
 	 * @return  array The option page associated with this field group.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	public function get_options_page() {
 		return $this->options_page;
@@ -124,7 +124,7 @@ abstract class Group {
 	 *
 	 * @param  string The option page associated with this field group.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 */
 	public function set_options_page( $options_page ) {
 		$this->options_page = $options_page;
@@ -135,7 +135,7 @@ abstract class Group {
 	 *
 	 * @return  array The user roles allowed to interact with this field group.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	public function get_user_roles() {
 		return $this->user_roles;
@@ -146,7 +146,7 @@ abstract class Group {
 	 *
 	 * @param  string The user roles allowed to interact with this field group.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 */
 	public function set_user_roles( $user_roles ) {
 		$this->user_roles = $user_roles;
@@ -164,7 +164,7 @@ abstract class Group {
 	 *
 	 * @return array         Field configuration.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	protected function _field_tab( $key, $label ) {
 		return array(
@@ -183,7 +183,7 @@ abstract class Group {
 	 *
 	 * @return array         Location rule.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	protected function _location_is( $param, $value ) {
 		return array(
@@ -207,7 +207,7 @@ abstract class Group {
 	 *
 	 * @return array         Location rule.
 	 *
-	 * @since   0.1.0
+	 * @since   1.0.0
 	 */
 	protected function _location_in( $param, $value ) {
 		return array(

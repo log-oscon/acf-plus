@@ -1,10 +1,10 @@
-# ACF Plus #
+=== ACF Plus ===
 
 Common utility classes for the Advanced Custom Fields (Pro) plugin on WordPress.
 
-## Usage ##
+== Usage ==
 
-### Field Groups ###
+= Field Groups =
 
 Extend the `\logoscon\ACF\Group` class, defining the `_register()` method:
 
@@ -24,13 +24,13 @@ This method should contain (at the very least) the code exported by Advanced Cus
 * `_location_is`
 * `_location_in` (see `\logoscon\ACF\Rule\Operator\In`)
 
-### Support for the `IN` operator in location rules ###
+= Support for the `IN` operator in location rules =
 
 ```php
 \logoscon\ACF\Rule\Operator\In::register();
 ```
 
-## Changelog ##
+== Changelog ==
 
-### 1.0.0 ###
+= 1.0.0 =
 * Initial release.  

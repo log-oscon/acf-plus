@@ -5,7 +5,7 @@ namespace logoscon\ACF\Rule\Operator;
 /**
  * Implements the `IN` location rule operator on Advanced Custom Fields.
  *
- * @since  0.1.0
+ * @since  1.0.0
  */
 class In {
 
@@ -16,7 +16,7 @@ class In {
 	 *
 	 * @uses \add_filter()
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 */
 	public static function register( $priority = 20 ) {
 		\add_filter( 'acf/location/rule_match/post_type',
@@ -33,7 +33,7 @@ class In {
 	 *
 	 * @uses \remove_filter()
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 */
 	public static function unregister( $priority = 20 ) {
 		\remove_filter( 'acf/location/rule_match/post_type',
@@ -56,7 +56,7 @@ class In {
 	 *
 	 * @return boolean          Whether the user type matches the rule.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 *
 	 * @uses \get_post_type()
 	 */
@@ -94,7 +94,7 @@ class In {
 	 *
 	 * @return boolean          Whether the user type matches the rule.
 	 *
-	 * @since  0.1.0
+	 * @since  1.0.0
 	 *
 	 * @uses \is_super_admin()
 	 * @uses \is_user_logged_in()

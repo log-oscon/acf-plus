@@ -1,0 +1,34 @@
+{
+  "name": "acf-plus",
+  "version": "1.0.0",
+  "description": "Common utility classes for the Advanced Custom Fields (Pro) plugin on WordPress.",
+  "license": "GPL-2.0+",
+  "repository": "https://github.com/log-oscon/acf-plus.git",
+  "author": [
+    {
+      "name": "Luís Rodrigues",
+      "email": "hello@goblindegook.com",
+      "homepage": "http://goblindegook.com"
+    },
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://github.com/s3rgiosan"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-checktextdomain": "^1.0.0",
+    "grunt-composer": "^0.4.4",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-compress": "^0.14.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-exec": "^0.4.6",
+    "grunt-phpunit": "^0.3.6",
+    "grunt-po2mo": "^0.1.2",
+    "grunt-wp-deploy": "^1.0.3",
+    "grunt-wp-i18n": "^0.5.3",
+    "grunt-wp-readme-to-markdown": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
