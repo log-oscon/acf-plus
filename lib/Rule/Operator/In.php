@@ -133,13 +133,15 @@ class In {
 	 *
 	 * - `IN`: Checks whether the page template is included in a set of possible values.
 	 *
-	 * @since  1.1.0
-	 *
 	 * @param  boolean $match   Whether the page template matches the rule.
 	 * @param  array   $rule    ACF location rule.
 	 * @param  array   $options Options containing the value to match.
 	 *
 	 * @return boolean          Whether the page template matches the rule.
+	 *
+	 * @since  1.1.0
+	 *
+	 * @uses \get_post_type()
 	 */
 	public static function rule_match_page_template( $match, $rule, $options ) {
 
@@ -151,7 +153,7 @@ class In {
 		}
 
 		if ( ! $post_type ) {
-			$post_type = get_post_type( $post_id );
+			$post_type = \get_post_type( $post_id );
 		}
 
 		if ( $post_type !== 'page' ) {
