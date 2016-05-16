@@ -13,7 +13,7 @@
  * Plugin Name:       ACF Plus
  * Plugin URI:        https://github.com/log-oscon/acf-plus/
  * Description:       Common utility classes for the Advanced Custom Fields (Pro) plugin on WordPress.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            log.OSCON, Lda.
  * Author URI:        http://log.pt/
  * License:           GPL-2.0+
