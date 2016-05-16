@@ -141,7 +141,7 @@ class In {
 	 *
 	 * @return boolean          Whether the page template matches the rule.
 	 */
-	public function rule_match_page_template( $match, $rule, $options ) {
+	public static function rule_match_page_template( $match, $rule, $options ) {
 
 		$post_type = $options['post_type'];
 		$post_id   = $options['post_id'];
