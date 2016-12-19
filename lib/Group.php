@@ -217,4 +217,28 @@ abstract class Group {
 		);
 	}
 
+	/**
+	 * Multiple location rule builder for equality checks.
+	 *
+	 * @param  string $param Parameter.
+	 * @param  array  $value Value required for validation.
+	 *
+	 * @return array         Location rule.
+	 *
+	 * @since   1.1.0
+	 */
+	protected function _location_are( $param, $values ) {
+		$location = array();
+		foreach ($values as $value) {
+			array_push($location, array(
+				array(
+					'param'    => $param,
+					'operator' => '==',
+					'value'    => $value,
+				)
+			));
+		}
+		return $location;
+	}
+
 }

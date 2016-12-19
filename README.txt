@@ -23,6 +23,7 @@ This method should contain (at the very least) the code exported by Advanced Cus
 * `_field_tab`
 * `_location_is`
 * `_location_in` (see `\logoscon\ACF\Rule\Operator\In`)
+* `_location_are`
 
 = Support for the `IN` operator in location rules =
 
@@ -31,6 +32,9 @@ This method should contain (at the very least) the code exported by Advanced Cus
 ```
 
 == Changelog ==
+
+= 1.1.0 =
+* Multiple location rule builder for equality checks.
 
 = 1.0.0 =
 * Initial release.  
